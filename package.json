@@ -19,9 +19,6 @@
     "dev": "gulp",
     "build": "gulp build"
   },
-  "bin": {
-    "create-gulp-starter-kit": "bin/install.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/akashiko/webApp.git"
@@ -45,10 +42,7 @@
     "gulp-stylus": "^2.7.0",
     "webpack-stream": "^5.2.1"
   },
-  "dependencies": {
-    "axios": "^0.19.0",
-    "fs-extra": "^8.1.0"
-  },
+  "dependencies": {},
   "engines": {
     "node": ">=8"
   },
