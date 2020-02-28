@@ -2,7 +2,6 @@
 [![yarn](https://img.shields.io/badge/yarn-v0.0.1-red)](https://github.com/akashiko/webApp)
 
 > Project of FEFU students, group Б8118-02.03.01сцт.
-> The authors Victor Kogai and Ali Yusifov
 
 ## Features / Description
 This project is a program for visualization, processing and analysis of multi-channel signals, which will then have to be supplemented by various means of signal analysis.
