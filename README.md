@@ -11,6 +11,10 @@ Here is a list of the current features:
 - Features #2
 - Features #3
 
+## Commands
+* ```yarn run dev``` - start the server for project development
+* ```yarn run build``` - build a project with optimization
+
 ## Requirements
 This should be installed on your computer in order to get up and running:
 
