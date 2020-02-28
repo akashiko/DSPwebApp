@@ -1,4 +1,4 @@
-# webApp
+# DSPwebApp
 [![yarn](https://img.shields.io/badge/yarn-v0.0.1-red)](https://github.com/akashiko/webApp)
 
 > Project of FEFU students, group Б8118-02.03.01сцт.
@@ -10,6 +10,10 @@ Here is a list of the current features:
 - Features #1
 - Features #2
 - Features #3
+
+## Commands
+* ```yarn run dev``` - start the server for project development
+* ```yarn run build``` - build a project with optimization
 
 ## Requirements
 This should be installed on your computer in order to get up and running:
