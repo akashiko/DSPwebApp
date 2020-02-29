@@ -43,4 +43,4 @@ For more information, take a look at the [package.json](package.json) file or vi
 - [Ali Yusifov](https://github.com/Im-Ali)(@aliwwwka.03) -
 
 ## License
-This project is licensed under the [MIT License](https://github.com/jr-cologne/gulp-starter-kit/blob/master/LICENSE).
+This project is licensed under the [MIT License](https://github.com/akashiko/DSPwebApp/blob/master/LICENSE).

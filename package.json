@@ -21,14 +21,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/akashiko/webApp.git"
+    "url": "git+https://github.com/akashiko/DSPwebApp.git"
   },
   "author": "Viktor Kogay and Ali Yusifov",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/akashiko/webApp"
+    "url": "https://github.com/akashiko/DSPwebApp"
   },
-  "homepage": "https://github.com/akashiko/webApp",
+  "homepage": "https://github.com/akashiko/DSPwebApp",
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
