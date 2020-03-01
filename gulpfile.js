@@ -6,7 +6,10 @@ const gulp                      = require('gulp'),
       stylus                    = require('gulp-stylus'),
       autoprefixer              = require('gulp-autoprefixer'),
       minifyCss                 = require('gulp-clean-css'),
+      babel                     = require('gulp-babel'),
       webpack                   = require('webpack-stream'),
+      uglify                    = require('gulp-uglify'),
+      concat                    = require('gulp-concat'),
       imagemin                  = require('gulp-imagemin'),
       browserSync               = require('browser-sync').create(),
 
@@ -56,6 +59,23 @@ gulp.task('stylus', () => {
     .pipe(browserSync.stream());
 });
 
+gulp.task('js', () => {
+  return gulp.src([ src_assets_folder + 'js/**/*.js' ], { since: gulp.lastRun('js') })
+    .pipe(plumber())
+    .pipe(webpack({
+      mode: 'production'
+    }))
+    .pipe(sourcemaps.init())
+      .pipe(babel({
+        presets: [ '@babel/env' ]
+      }))
+      .pipe(concat('all.js'))
+      .pipe(uglify())
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest(dist_assets_folder + 'js'))
+    .pipe(browserSync.stream());
+});
+
 gulp.task('images', () => {
   return gulp.src([ src_assets_folder + 'images/**/*.+(png|jpg|jpeg|gif|svg|ico)' ], { since: gulp.lastRun('images') })
     .pipe(plumber())
@@ -80,9 +100,9 @@ gulp.task('vendor', () => {
     .pipe(browserSync.stream());
 });
 
-gulp.task('build', gulp.series('clear', 'html', 'sass', 'stylus', 'images', 'vendor'));
+gulp.task('build', gulp.series('clear', 'html', 'sass', 'stylus', 'js', 'images', 'vendor'));
 
-gulp.task('dev', gulp.series('html', 'sass', 'stylus'));
+gulp.task('dev', gulp.series('html', 'sass', 'stylus', 'js'));
 
 gulp.task('serve', () => {
   return browserSync.init({
@@ -108,7 +128,8 @@ gulp.task('watch', () => {
   const watch = [
     src_folder + '**/*.html',
     src_assets_folder + 'sass/**/*.sass',
-    src_assets_folder + 'stylus/**/*.styl'
+    src_assets_folder + 'stylus/**/*.styl',
+    src_assets_folder + 'js/**/*.js'
   ];
 
   gulp.watch(watch, gulp.series('dev')).on('change', browserSync.reload);
