@@ -35,7 +35,8 @@ gulp.task('html', () => {
 
 gulp.task('sass', () => {
   return gulp.src([
-    src_assets_folder + 'sass/**/*.sass'
+    src_assets_folder + 'sass/**/*.sass',
+    src_assets_folder + 'scss/**/*.scss'
   ], { since: gulp.lastRun('sass') })
     .pipe(sourcemaps.init())
       .pipe(plumber())
@@ -128,6 +129,7 @@ gulp.task('watch', () => {
   const watch = [
     src_folder + '**/*.html',
     src_assets_folder + 'sass/**/*.sass',
+    src_assets_folder + 'scss/**/*.scss',
     src_assets_folder + 'stylus/**/*.styl',
     src_assets_folder + 'js/**/*.js'
   ];

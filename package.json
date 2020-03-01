@@ -6,6 +6,7 @@
     "gulp",
     "gulp-starter-kit",
     "sass",
+    "scss",
     "stylus",
     "babel",
     "browser-sync",
@@ -22,9 +23,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/akashiko/DSPwebApp.git"
+    "url": "https://github.com/akashiko/DSPwebApp.git"
   },
-  "author": "Viktor Kogay and Ali Yusifov",
+  "author": "Viktor Kogai and Ali Yusifov",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/akashiko/DSPwebApp"
@@ -54,6 +55,5 @@
   },
   "engines": {
     "node": ">=8"
-  },
-  "main": "gulpfile.js"
+  }
 }
