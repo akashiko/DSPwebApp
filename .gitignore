@@ -1,3 +1,7 @@
+.idea
+.github
+_config.yml
 node_modules
 dist
-.idea
+yarn.lock
+package-lock.json
