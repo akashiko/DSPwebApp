@@ -1,0 +1,25 @@
+.header {
+    background-color: #181818;
+
+    border-top: 5px solid #343434;
+    border-bottom: 5px solid #343434;
+    &__wrapper {
+        @include container;
+        @include row-flex;
+
+        background-color: #181818;
+
+        margin: 0 auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    &__logo{}
+}
+
+.logo {
+    &__img {}
+    &__title {
+        font-size: 26px;
+        color: #fff;
+    }
+}
