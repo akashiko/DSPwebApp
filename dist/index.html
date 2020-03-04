@@ -32,9 +32,21 @@
 
     </head>
     <body>
-        @@include("../blocks/modules/header/header.html")
-        @@include("../blocks/modules/interface/interface.html")
-        @@include("../blocks/modules/footer/footer.html")
+        <section class="header">
+    <div class="header__wrapper">
+        <div class="header__logo logo">
+            <div class="logo__img"></div>
+            <div class="logo__title">DSPwebApp</div>
+        </div>
+    </div>
+</section>
+        <section class="interface">
+    <div class="interface__wrapper">
+        <label for="upload" class="interface__upload-label">Выберите файлы</label>
+        <input type="file" class="interface__upload_hide" id="upload" name="myfile" multiple>
+    </div>
+</section>
+        
         <script src="../js/main.js"></script>
         <script src="../js/vendor.js"></script>
     </body>

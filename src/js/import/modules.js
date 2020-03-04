@@ -1,3 +1,3 @@
 import "%modules%/header/header";
 import "%modules%/footer/footer";
-import "%modules%/interface/interface";
+import "%modules%/interface/interface"
