@@ -465,9 +465,29 @@ ul {
     }
 }*/
 
-.dws-menu * {
-  margin: 0;
-  padding: 0;
+.navbar__get-file {
+  position: absolute;
+  z-index: -1;
+  width: 0.1px;
+  height: 0.1px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.navbar__get-file-label {
+  display: block;
+  padding: 10px;
+  text-transform: none;
+  background: #e4e4e5;
+  font-size: 14px;
+  color: #454547;
+}
+
+.navbar__get-file-label:hover {
+  background: linear-gradient(to bottom, #e0e1e5 0%, #454547 2%, #454547 98%, #e0e1e5 100%);
+  color: #ffffff;
+  box-shadow: 1px 5px 10px -5px #000;
+  transition: all 0.3s ease;
 }
 
 .dws-menu ul,
