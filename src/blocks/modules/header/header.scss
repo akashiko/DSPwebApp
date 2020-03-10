@@ -1,6 +1,6 @@
 .header {
-    border-top: 5px solid #343434;
-    border-bottom: 5px solid #343434;
+    border-top: 3px solid #343434;
+    border-bottom: 3px solid #343434;
     &__wrapper {
         @include container;
         @include row-flex;

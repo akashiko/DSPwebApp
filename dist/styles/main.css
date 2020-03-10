@@ -401,8 +401,8 @@ ul {
 }
 
 .header {
-  border-top: 5px solid #343434;
-  border-bottom: 5px solid #343434;
+  border-top: 3px solid #343434;
+  border-bottom: 3px solid #343434;
 }
 
 .header__wrapper {
@@ -422,6 +422,13 @@ ul {
 .logo__title {
   font-size: 26px;
   color: #000;
+}
+
+.navbar__wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
 }
 
 @media screen and (min-width: 36rem) {
