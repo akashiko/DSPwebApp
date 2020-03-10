@@ -403,6 +403,7 @@ ul {
 .header {
   border-top: 3px solid #343434;
   border-bottom: 3px solid #343434;
+  background: #c9c9c9;
 }
 
 .header__wrapper {
@@ -411,24 +412,129 @@ ul {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
   display: flex;
-  flex-wrap: wrap;
-  margin-left: -0.9375rem;
-  margin-right: -0.9375rem;
+  flex-direction: column;
+  background: #c9c9c9;
   margin: 0 auto;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
 .logo__title {
+  width: 100%;
   font-size: 26px;
   color: #000;
 }
 
-.navbar__wrapper {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
+/*
+.navbar {
+    margin-top: 10px;
+    &__wrapper {
+        @include container;
+        @include row-flex;
+    }
+    &__nav {
+        width: 100%;
+        max-width: 800px;
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    &__item {
+        display: inline-block;
+        list-style-type: none;
+        font-size: 24px;
+        &:hover .navbar__submenu {
+            display: block;
+        }
+    }
+    &__a {
+        text-decoration: none;
+    }
+    &__down {
+        text-decoration: none;
+    }
+    &__submenu {
+        display: none;
+        position: absolute;
+        list-style-type: none;
+        & a {
+            text-decoration: none;
+        }
+    }
+}*/
+
+.dws-menu * {
+  margin: 0;
+  padding: 0;
+}
+
+.dws-menu ul,
+.dws-menu ol {
+  list-style: none;
+}
+
+.dws-menu > ul {
+  display: flex;
+}
+
+.dws-menu > ul li {
+  position: relative;
+  border-right: 1px solid #c7c8ca;
+}
+
+.dws-menu > ul li > a i.fa {
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  font-size: 18px;
+}
+
+.dws-menu > ul li a {
+  display: block;
+  background: #c9c9c9;
+  padding: 15px 30px 15px 40px;
+  font-size: 14px;
+  color: #454547;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.dws-menu li a:hover {
+  background: linear-gradient(to bottom, #e0e1e5 0%, #454547 2%, #454547 98%, #e0e1e5 100%);
+  color: #ffffff;
+  box-shadow: 1px 5px 10px -5px #000;
+  transition: all 0.3s ease;
+}
+
+/*sub menu*/
+
+.dws-menu li ul {
+  display: none;
+  position: absolute;
+  min-width: 150px;
+}
+
+.dws-menu li > ul li {
+  border: 1px solid #c7c8ca;
+}
+
+.dws-menu li > ul li a {
+  padding: 10px;
+  text-transform: none;
+  background: #e4e4e5;
+}
+
+.dws-menu li > ul li ul {
+  position: absolute;
+  top: 0;
+  right: -150px;
+}
+
+.dws-menu li:hover > ul {
+  display: block;
 }
 
 @media screen and (min-width: 36rem) {
