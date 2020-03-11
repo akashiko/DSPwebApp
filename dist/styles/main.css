@@ -382,6 +382,10 @@ template {
   display: none;
 }
 
+body {
+  background: #c9c9c9;
+}
+
 h1,
 h2,
 h3,
@@ -422,6 +426,11 @@ ul {
 .logo__title {
   width: 100%;
   font-size: 26px;
+  color: #000;
+}
+
+.logo__title a {
+  text-decoration: none;
   color: #000;
 }
 
@@ -555,6 +564,32 @@ ul {
 
 .dws-menu li:hover > ul {
   display: block;
+}
+
+.about__wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 500px;
+  text-align: center;
+}
+
+.about__title {
+  font-size: 26px;
+}
+
+.about__subtitle {
+  width: 600px;
+  font-size: 24px;
+  margin: 0 auto;
+}
+
+.about__authors {
+  font-size: 20px;
 }
 
 @media screen and (min-width: 36rem) {
